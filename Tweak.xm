@@ -4,8 +4,8 @@ NSDictionary *bundleDefaults = [[NSUserDefaults standardUserDefaults]
 persistentDomainForName:@"com.daydream.statuscolorsprefs"];
 id isEnabled = [bundleDefaults valueForKey:@"isEnabled"];
 */
-%hook UIStatusBarItemView
--(BOOL)isVisible {
+%hook UIStatusBar_Base
+-(BOOL)isHidden {
 	NSDictionary *bundleDefaults = [[NSUserDefaults standardUserDefaults]
 	persistentDomainForName:@"com.daydream.statuscolorprefs"];
 	id isEnabled = [bundleDefaults valueForKey:@"isEnabled"];
