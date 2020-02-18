@@ -2,6 +2,7 @@ include $(THEOS)/makefiles/common.mk
 
 BUNDLE_NAME = statuscolorsprefs
 
+ARCHS = arm64 arm64e
 statuscolorsprefs_FILES = SCPRootListController.m
 statuscolorsprefs_INSTALL_PATH = /Library/PreferenceBundles
 statuscolorsprefs_FRAMEWORKS = UIKit
